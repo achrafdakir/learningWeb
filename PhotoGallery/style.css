@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    /*fill the img container while maintaining aspect ratio*/
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container.*/
+.gallery{
+    display: flex;
+    /*The main axis is defined by the flex-direction property, which has four possible values: row(default),row-reverse,column,column-reverse*/
+    flex-direction: row;
+    /*The flex-wrap property determines how your flex items behave when the flex container is too small.*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin : 0 auto;
+    /*The gap CSS shorthand property sets the gaps, also known as gutters, between rows and columns.*/
+    gap: 16px;
+}
+
+.gallery::after{
+    content: "";
+    width: 350px;
+}
