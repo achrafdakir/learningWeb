@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Java Documentation</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#printing_to_the_console">Printing to the Console</a></li>
+            <li><a class="nav-link" href="#conditions">Conditions</a></li>
+            <li><a class="nav-link" href="#loops">Loops</a></li>
+            <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>Java is a popular, versatile, and object-oriented programming language.</p>
+            <img src="https://www.infoworld.com/wp-content/uploads/2024/06/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-orig.jpg?quality=50&strip=all" alt="java">
+            <ul>
+                <li><strong>Object-Oriented:</strong> Java is based on the principles of object-oriented programming (OOP), allowing for modular and reusable code.</li>
+                <li><strong>Platform-Independent:</strong> Java code can run on any platform that has the Java Virtual Machine (JVM), making it highly portable.</li>
+                <li><strong>Robust and Secure:</strong> Java provides strong memory management, exception handling, and security features.</li>
+                <li><strong>High Performance:</strong> Although an interpreted language, Java is optimized through Just-In-Time (JIT) compilation, making it performant.</li>
+                <li><strong>Multi-threaded:</strong> Java allows multiple threads to run concurrently, enhancing efficiency in applications.</li>
+            </ul>
+            <p>Known for its portability and performance, Java is widely used in various domains, from web applications to mobile applications, scientific applications, and more. In this documentation, we’ll explore some fundamental concepts of Java.</p>
+        </section>
+        <section class="main-section" id="printing_to_the_console">
+            <header>Printing to the Console</header>
+            <p>In Java, you can display output to the console using the <code>System.out.println()</code> method. Here’s an example:</p>
+            <pre><code>
+                public class HelloWorld {
+                    public static void main(String[] args) {
+                        System.out.println("Hello, World!");
+                    }
+                }
+            </code></pre>
+            <p>This program prints "Hello, World!" to the console.</p>
+        </section>
+        <section class="main-section" id="conditions">
+            <header>Conditions</header>
+            <p>Java supports conditional statements, such as <code>if</code>, <code>else if</code>, and <code>else</code>, to control the flow of the program based on certain conditions. Here’s an example:</p>
+            <pre><code>
+                int age = 18;
+                if (age >= 18) {
+                    System.out.println("You are an adult.");
+                } else {
+                    System.out.println("You are a minor.");
+                }
+            </code></pre>
+            <p>This code checks the age and prints a message depending on whether the person is an adult or a minor.</p>
+        </section>
+        <section class="main-section" id="loops">
+            <header>Loops</header>
+            <p>Loops are used to execute a block of code repeatedly. Java provides various loops, such as <code>for</code>, <code>while</code>, and <code>do-while</code>. Here’s an example of a <code>for</code> loop:</p>
+            <pre><code>
+                for (int i = 0; i < 5; i++) {
+                    System.out.println("Iteration " + i);
+                }
+            </code></pre>
+            <p>This loop prints the current iteration number five times, from 0 to 4.</p>
+        </section>
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from <a href="https://docs.oracle.com/en/java/">here</a></p>
+            <p>Achraf Dakir</p>
+        </section>
+    </main>
+</body>
+</html>
