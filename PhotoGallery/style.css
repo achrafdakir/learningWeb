@@ -33,8 +33,8 @@ header{
     flex-direction: row;
     /*The flex-wrap property determines how your flex items behave when the flex container is too small.*/
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*main-axis, it changes when column*/
+    align-items: center;    /*cross-axis, it changes when column*/
     padding: 20px 10px;
     max-width: 1400px;
     margin : 0 auto;
